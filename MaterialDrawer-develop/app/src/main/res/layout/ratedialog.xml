@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="230dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    style="@style/popupDialog.background" >
+
+    <LinearLayout
+        android:id="@+id/topLayoutRateUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical" >
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/RateUsheaderView"
+            style="@style/popupDialog.header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woho" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/rateUsDescTextview"
+            style="@style/popupDialog.headerDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/star_string" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/rate_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayoutRateUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/star" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rate_imageview"
+        android:layout_marginTop="30dp" >
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/sureTExtview"
+            style="@style/popupDialog.done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="26dp"
+            android:text="@string/sure" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/cancleRate_view"
+            style="@style/popupDialog.cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@+id/sureTExtview"
+            android:text="@string/cancel"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

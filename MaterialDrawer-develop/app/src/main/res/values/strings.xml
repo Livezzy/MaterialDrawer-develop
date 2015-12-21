@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">LiveEazzy</string>
+
+    <string name="internet_errorMsg">No internet connection!</string>
+    <!-- Sample menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_persistent_compact_header">PersistentHeader Drawer</string>
+    <string name="drawer_item_persistent_compact_header_desc">Smaller persistent account header</string>
+    <string name="drawer_item_compact_header">CompactHeader Drawer</string>
+    <string name="drawer_item_compact_header_desc">Smaller account header</string>
+    <string name="drawer_item_action_bar_drawer">ActionBar Drawer</string>
+    <string name="drawer_item_action_bar_drawer_desc">Shows how to use with an actionbar</string>
+    <string name="drawer_item_multi_drawer">Multi Drawer</string>
+    <string name="drawer_item_multi_drawer_desc">Left and Right side drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer">NonTranslucentStatus Drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer_desc">Drawer below statusBar</string>
+    <string name="drawer_item_advanced_drawer">Live Eazzy</string>
+    <string name="drawer_item_advanced_drawer_desc">More live eazzy features</string>
+    <string name="drawer_item_keyboard_util_drawer">KeyboardUtil Drawer</string>
+    <string name="drawer_item_keyboard_util_drawer_desc">KeyboardUtil to (fix) adjustResize</string>
+    <string name="drawer_item_embedded_drawer">Embedded Drawer</string>
+    <string name="drawer_item_embedded_drawer_desc">Embed the drawer anywhere</string>
+    <string name="drawer_item_mini_drawer">MiniDrawer</string>
+    <string name="drawer_item_mini_drawer_desc">Always visible MiniDrawer</string>
+    <string name="drawer_item_fullscreen_drawer">FullScreen Drawer</string>
+    <string name="drawer_item_fullscreen_drawer_desc">Drawer in FullScreen activity</string>
+    <string name="drawer_item_custom_container_drawer">CustomContainer Drawer</string>
+    <string name="drawer_item_custom_container_drawer_desc">Drawer in different view hirachy</string>
+    <string name="drawer_item_menu_drawer">Menu Drawer</string>
+    <string name="drawer_item_menu_drawer_desc">Drawer from menu.xml</string>
+    <string name="drawer_item_fragment_drawer">Fragment Drawer</string>
+    <string name="drawer_item_fragment_drawer_desc">Use drawer within fragments</string>
+    <string name="drawer_item_collapsing_toolbar_drawer">CollapsingToolbar Drawer</string>
+    <string name="drawer_item_collapsing_toolbar_drawer_desc">Uses a CollapsingToolbarLayout</string>
+
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Live Eazzy</string>
+    <string name="drawer_item_custom">Smart Live</string>
+    <string name="drawer_item_section_header">Categories</string>
+    <string name="drawer_item_settings">Grocery &amp; Staples</string>
+    <string name="drawer_item_help">Fruitls &amp; Vegetables</string>
+    <string name="drawer_item_open_source">Breakfast &amp; Dairy Products</string>
+    <string name="drawer_item_contact">Beverages</string>
+
+
+    <string name="please_wait_msg">please wait...</string>
+
+    <string-array name="brew_array">
+        <item>Cappuccino</item>
+        <item>Espresso</item>
+        <item>Mocha</item>
+        <item>Caffè Americano</item>
+        <item>Cafe Zorro</item>
+    </string-array>
+
+    <!--font used-->
+    <string name="roboto_medium">Roboto-Regular.ttf</string>
+    <string name="roboto_regular">sans-serif</string>
+
+    <!--dialogs -->
+
+    <string name="woho">woohoo!</string>
+    <string name="star_string">Give us 5 stars maybe?</string>
+    <string name="cancel">CANCEL</string>
+    <string name="sure">SURE</string>
+    <string name="contact">Contact Us</string>
+    <string name="contactDiscription">We would love to address your concern</string>
+    <string name="call">CALL</string>
+    <string name="feedbackString">Our Bad :(</string>
+    <string name="feedbackDesc">Give us a quick feedback?</string>
+    <string name="rateString">Rate Us</string>
+    <string name="rateDescString">How was your experience with us?</string>
+    <string name="walletCashString">cash in wallet</string>
+    <string name="subTotalString">Sub Total</string>
+    <string name="payString">PAY WITH WALLET</string>
+    <string name="title_activity_forget_password">Forget Password</string>
+
+
+</resources>

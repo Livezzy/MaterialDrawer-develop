@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proceedToPayment"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/lblSubTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:textColor="@color/grey" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/subTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Rs. 257" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/lblDeliveryCharges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblSubTotal"
+                    android:layout_marginTop="10dp"
+                    android:text="Delivery Charges" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/deliveryCharges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/subTotal"
+                    android:layout_marginTop="10dp"
+                    android:text="Rs. 0" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/lblNetPayable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblDeliveryCharges"
+                    android:layout_marginTop="20dp"
+                    android:text="Net Payable"
+                    android:textColor="@color/statusBar" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/netPayable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/deliveryCharges"
+                    android:layout_marginTop="20dp"
+                    android:text="Rs. 257"
+                    android:textColor="@color/statusBar" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/netPayable"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Apply a Promo Code" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#949494"></View>
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Where Should we deliver your order?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:visibility="visible">
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/addressType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="@color/menu_bar" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/addressDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Wayne Manor, 1007 Mountain Drive Gotham" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="WORK"
+                    android:textColor="@color/menu_bar"
+                    android:visibility="gone" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Wayne Manor, 1007 Mountain Drive Gotham"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="When Should we deliver your order?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingTop="30dp">
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/deliveryTime"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Wedensday, November 11, 8:00 PM" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/rightArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/proceedToPayment"
+        style="@style/App.button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="PROCEED TO PAYMENT"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

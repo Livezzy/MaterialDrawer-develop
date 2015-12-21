@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#006600" >
+
+        <TextView
+            android:id="@+id/cashShowView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="50dp"
+            android:text="Rs 500"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/walletView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:text="@string/walletCashString" />
+
+    <TextView
+        android:id="@+id/totalCashView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/walletView"
+        android:layout_alignBottom="@+id/walletView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:text="Rs 500" />
+
+    <TextView
+        android:id="@+id/cashSubTotalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subTotaltextView"
+        android:layout_alignBottom="@+id/subTotaltextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:text="Rs 275" />
+
+    <TextView
+        android:id="@+id/subTotaltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/walletView"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="@string/subTotalString" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#006600"
+        android:text="@string/payString"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

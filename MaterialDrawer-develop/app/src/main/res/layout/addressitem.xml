@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/home_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/addressType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/menu_bar"
+                android:textSize="20sp" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:text="Edit"
+                android:textColor="@color/menu_bar"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/addressDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wayne Manor, 1007 Mountain Drive Gotham" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp">
+
+    <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomEditText
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/menu_bar"
+            android:textColorHint="@color/menu_bar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/lockicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomEditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/lockicon"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/menu_bar"
+            android:textColorHint="@color/menu_bar" />
+
+        <TextView
+            android:id="@+id/eye"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+    <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+        android:id="@+id/loginBtn"
+        style="@style/common.button"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="LOG IN"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/signUpNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="Not a member? Sign up now!"
+            android:textColor="@color/white" />
+
+        <View
+            style="@style/common.line"
+            android:layout_width="match_parent"
+            android:layout_below="@id/signUpNow"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Forget Password?"
+            android:textColor="@color/white" />
+
+        <View
+            style="@style/common.line"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_alignLeft="@+id/forgetPassword"
+            android:layout_alignRight="@+id/forgetPassword"
+            android:layout_below="@id/forgetPassword"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/offer"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/subCategoryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/proceedToCheckoutBtn"
+            style="@style/App.button"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="My Cart"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/checkOutAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="Rs. 357"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/emptyCartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cartSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/lblLonely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartSymbol"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="It's lonely here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lonelySmiley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartSymbol"
+                android:layout_toRightOf="@+id/lblLonely"
+                android:text=":("
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+            android:id="@+id/startShopping"
+            style="@style/App.button"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="START SHOPING"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/freeDelevery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Add more items to cart for free delivery"
+            android:textColor="@color/white" />
+
+        <ListView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/freeDelevery"></ListView>
+
+        <RelativeLayout
+            android:id="@+id/proceedToCheckoutBtn"
+            style="@style/App.button"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_alignParentBottom="true">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="false"
+                android:enabled="false"
+                android:text="PROCEED TO CHECKOUT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="false"
+                android:enabled="false"
+                android:text="Rs. 357"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

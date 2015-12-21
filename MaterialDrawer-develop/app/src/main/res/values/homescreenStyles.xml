@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  dialogs styles
+  -->
+    <style name="popupDialog" />
+    - <style name="popupDialog.background">
+    <item name="android:background">@android:drawable/dialog_holo_light_frame</item>
+</style>
+    - <style name="popupDialog.header">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textStyle">bold</item>
+    <!--<item name="android:textColor">@android:color/black</item>-->
+</style>
+    - <style name="popupDialog.headerDescription">
+    <!--<item name="android:textColor">@android:color/black</item>-->
+    <item name="android:textSize">15sp</item>
+</style>
+    - <style name="popupDialog.cancel">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textStyle">bold</item>
+    <!--<item name="android:textColor">@android:color/black</item>-->
+</style>
+    - <style name="popupDialog.done">
+    <item name="android:textColor">@color/menu_bar</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+</resources>

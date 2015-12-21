@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3E50B4</color>
+    <color name="colorPrimaryDark">#2F3E9E</color>
+    <color name="colorPrimaryLight">#C4C9E8</color>
+    <color name="colorAccent">#02A8F3</color>
+    <!-- overwrite the selected colors because the primary color is to dark -->
+    <color name="material_drawer_selected_text">#536EEA</color>
+    <color name="material_drawer_dark_selected_text">#536EEA</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="menu_bar">#93A507</color>
+    <color name="statusBar">#728100</color>
+    <color name="listselector">#728100</color>
+    <!-- side bar color-->
+    <color name="drawerTextColor">#484848</color>
+
+    <color name="silverChalice">#A7A7A7</color>
+    <color name="tundora">#4C4C4C</color>
+
+    <color name="tabTextColor">#E2E7CC</color>
+
+    <color name="grey">#7e7e7e</color>
+</resources>

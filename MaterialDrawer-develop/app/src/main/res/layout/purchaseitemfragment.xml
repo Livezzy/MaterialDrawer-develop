@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/unitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 34"
+            android:textColor="@color/black">
+
+        </com.mikepenz.materialdrawer.app.com.widget.CustomTextView>
+
+        <LinearLayout
+            android:id="@+id/dimentionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unit_inactive_bg"
+                android:text="250 GM" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/unit_inactive_bg"
+                android:text="500 GM" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/unit_active_bg"
+                android:text="1 KG" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:id="@+id/addItem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/remove_item"
+                android:visibility="visible" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="2"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                android:id="@+id/removeItem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/add_item" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Rs. 68"
+                android:textColor="@color/menu_bar" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/offerLblIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/offerLblIcon"
+                android:text="OFFER"
+                android:textColor="@color/black" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offerLblIcon"
+                android:layout_marginTop="5dp"
+                android:text="Get 500 gm free on purchase of 3 kg" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

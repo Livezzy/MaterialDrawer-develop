@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:padding="10dp"
+    style="@style/popupDialog.background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topLayoutFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/feedbackHeaderView"
+            style="@style/popupDialog.header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackString" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/rateUsDescTextview"
+            style="@style/popupDialog.headerDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/feedbackDesc" />
+    </LinearLayout>
+
+   
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayoutFeedback"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp" >
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/surefeedTExtview"
+            style="@style/popupDialog.done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:text="@string/sure" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/cancleFeedback_view"
+            style="@style/popupDialog.cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@+id/surefeedTExtview"
+            android:text="@string/cancel"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

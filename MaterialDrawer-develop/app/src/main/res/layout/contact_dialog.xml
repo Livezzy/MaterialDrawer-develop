@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/popupDialog.background"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/topLayoutContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical" >
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/RateUsheaderView"
+            style="@style/popupDialog.header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/rateUsDescTextview"
+            style="@style/popupDialog.headerDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/contactDiscription" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/topLayoutContactUs"
+        android:layout_marginTop="30dp" >
+    </RelativeLayout>
+
+    <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+        android:id="@+id/cancleContact_view"
+        style="@style/popupDialog.cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/callTExtview"
+        android:layout_alignBottom="@+id/callTExtview"
+        android:layout_marginRight="47dp"
+        android:layout_toLeftOf="@+id/callTExtview"
+        android:text="@string/cancel"
+        android:textStyle="bold" />
+
+    <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+        android:id="@+id/callTExtview"
+        style="@style/popupDialog.done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/relativeLayout1"
+        android:text="@string/call" />
+
+</RelativeLayout>

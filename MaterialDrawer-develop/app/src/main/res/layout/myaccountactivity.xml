@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/emptyCartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/profile_my"
+            android:gravity="center"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileLayout"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#949494"></View>
+
+            <LinearLayout
+                android:id="@+id/myOrdersBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/my_orders_icon"/>
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:text="My Orders"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:alpha=".7"/>
+                <TextView
+                    android:id="@+id/myorder_rightArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#949494"></View>
+
+            <LinearLayout
+                android:id="@+id/myAddressBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/my_addresses_icon"/>
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:text="My Address"
+                    android:textColor="@color/black"
+                    android:alpha=".7"/>
+
+                <TextView
+                    android:id="@+id/myAddress_rightArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#949494"></View>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

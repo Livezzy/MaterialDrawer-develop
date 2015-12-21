@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/statusBar"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:clickable="true">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+            android:id="@+id/headerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Fruits Vegetables"
+            android:textColor="@color/white" />
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+            android:id="@+id/headerTotals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="Rs. 635"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:padding="10dp">
+
+        <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/product_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic Tomato(250 gm)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="750 gm" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 51"
+                    android:textColor="@color/menu_bar"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/clear"
+                android:layout_marginTop="80dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                    android:id="@+id/removeItem"
+                    android:layout_width="@dimen/add_remove_btn"
+                    android:layout_height="@dimen/add_remove_btn"
+                    android:background="@drawable/remove_item"
+                    android:visibility="visible" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.mikepenz.materialdrawer.app.com.widget.CustomButton
+                    android:id="@+id/addItem"
+                    android:layout_width="@dimen/add_remove_btn"
+                    android:layout_height="@dimen/add_remove_btn"
+                    android:background="@drawable/add_item" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

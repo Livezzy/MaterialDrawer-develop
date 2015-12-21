@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cartSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone" />
+
+            <com.mikepenz.materialdrawer.app.com.widget.CustomTextView
+                android:id="@+id/lblLonely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartSymbol"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="No orders found!"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/orderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </RelativeLayout>
+</RelativeLayout>
